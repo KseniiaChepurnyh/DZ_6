@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="CustomCollectionCell" id="j4q-bA-2OK" customClass="CustomCollectionCell" customModule="DZ_6" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fZ6-Nr-IC1">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iXU-if-GLW">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.470633364" green="0.43029514559999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iXU-if-GLW" secondAttribute="trailing" id="5fb-jd-ZVI"/>
+                    <constraint firstItem="iXU-if-GLW" firstAttribute="leading" secondItem="fZ6-Nr-IC1" secondAttribute="leading" id="RJH-K5-NFf"/>
+                    <constraint firstAttribute="bottom" secondItem="iXU-if-GLW" secondAttribute="bottom" id="Z5f-8u-Abq"/>
+                    <constraint firstItem="iXU-if-GLW" firstAttribute="top" secondItem="fZ6-Nr-IC1" secondAttribute="top" id="htq-oS-3Im"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="cellImage" destination="iXU-if-GLW" id="2I1-AN-bqR"/>
+            </connections>
+            <point key="canvasLocation" x="175" y="43"/>
+        </collectionViewCell>
+    </objects>
+</document>

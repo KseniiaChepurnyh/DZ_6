@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var fullScreanImage: UIImageView!
+    public var image: UIImage = UIImage()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        fullScreanImage.image = image
+        
     }
+    
 
-
+    @IBAction func exitVC(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
-
